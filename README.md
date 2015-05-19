@@ -19,15 +19,22 @@ In detail, the script does the following:
 
 From this tidy data set, a final independent tidy data set is created with the average of each mean or std variable for each activity and subject.  
 
-* Uses melt to condense all the variables into a single column (very narrow, long data set)
-* Uses dcast to calculate the mean for each activity and subject for every variable
+* Condenses (melts) all the variables into a single column (very narrow, long data set)
+* Calculates the mean for each activity and subject for every variable using dcast
 * Writes a tab deliniated .txt file to the working directory
   
 This is a verbose script and will print to the screen a few status messages to inform the user of the script progress.
+
 Example:
+
 > File loads complete
+
 > Dimensions of tidy data set:
+
 > 10299 rows, 88 columns
+
 > Dimensions of variable means by Activity and Subject_ID:
+
 > 180 rows, 88 columns
+
 > Write to file Variable_Means_by_Activity&Subject.txt complete
