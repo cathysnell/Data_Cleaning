@@ -7,6 +7,9 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
+Accelerometer measurements are in meters / second*second (meters per second squared)
+Gyroscope measurements are in degree / second (degree per second)
+
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
@@ -40,5 +43,23 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-The complete set of variables available in the raw dataset that were estimated from the signals is available in 'features.txt': 
+The final tidy data set includes average accelerometer and gyroscope measurements for each Activity and Subject/Participant combination in the study.  
+
+Subjects are indicated by integers 1-30.  
+
+Activities are one of the following:
+1 WALKING
+
+2 WALKING_UPSTAIRS
+
+3 WALKING_DOWNSTAIRS
+
+4 SITTING
+
+5 STANDING
+
+6 LAYING
+
+
+The complete set of measurement variables available in the raw dataset that were estimated from the signals is available in 'features.txt': 
 
